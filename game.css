@@ -1,0 +1,210 @@
+*{
+    align-items: center;
+    align-content: center;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: whitesmoke;
+    animation: backgroundColorChange 10s infinite; /* Change every 10 seconds */
+}
+
+h2{
+    font-family:"Harrington";
+}
+.hero {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:80vh; /*adjust height to reduce space*/
+    padding: 0 10px;
+    text-align: center;
+    position: relative;  
+}
+
+.main{
+    flex: 1;
+    align-items: center;
+    align-content: center;
+}
+
+.h4 {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display:block;
+    margin: auto;
+}
+
+.container1 {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+    margin: auto;
+    font-size: x-large;
+    font-family: Harrington;
+    background-color: rgb(16, 33, 90);
+    max-width:700px ;
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 30px;
+}
+
+/* Main Container Styling */ 
+.main-container {
+    background-color: #20232a; /* Dark background for the box */
+    padding: 20px;
+    margin: 40px auto; /* Center the box horizontally */ 
+    margin-top: 130px;
+    border-radius: 15px; /* Rounded corners */ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: none; /* Maximum width for the container */
+    width:90%; /*set to cover more width*/ 
+    text-align: center; /* Center text within the box */
+}
+
+.cards {
+
+    display:flex;
+    flex-direction: row;
+    flex:wrap;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+}
+
+.container {
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; /* Centers cards horizontally */ 
+    align-items: center; /* Centers cards vertically */ 
+    text-align: center; /* Ensures the text inside the container is centered */
+    margin-top: 10px; /*reduce the space above this container*/   
+}
+
+.card {
+    display: flex;
+    flex-direction: column ; /* Stack items vertically */
+    align-items: center; /* Centers card content horizontally */ 
+    justify-content: space-between; /* Evenly space out card content */
+    width: 200px; 
+    margin: 20px; 
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(72, 16, 43); 
+    transition: transform 0.3s; /* Add smooth transform transition */  
+}
+
+.card img {
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;  
+}
+
+.card p {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 2px;
+    background-color: #333;
+    color: white;
+    background-color:rgb(72, 16, 43);
+    text-align: center;
+    position:relative;
+    bottom:0;
+    width: 100%;
+    font-size: 14px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Brain Teaser Main Container */
+.brain-teaser-main { 
+    background-color: #51628d;
+    padding: 10px;
+    margin: 20px auto; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width:60%;
+    max-width: 700px; /*set a max width*/
+    height:auto;
+    text-align: center;
+    border: 2px solid #5a2b93;
+    animation: backgroundColorChange 10s infinite; 
+}
+
+.test-container{
+    width: 100%;
+    height: 100px; 
+    animation: backgroundColorChange 10s infinite;  
+}
+/* Brain Teaser Buttons Container */ 
+.brain-teaser-buttons-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    margin: 10px 0;
+    /*add animation properties*/
+    animation: backgroundColorChange 10s infinite; /*change every 10 seconds*/
+}
+
+/* Container for question marks */
+#questionMarksContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction with the question marks */
+    overflow: hidden; /* Prevent overflow of question marks */
+    z-index: -1; /* Send it to the back */
+}
+
+/* Individual question mark styles */
+.question-mark {
+    position: absolute;
+    font-size: 30px; /* Size of the question mark */
+    opacity: 0.7; /* Slight transparency */
+}
+
+/* Background animation */
+
+@keyframes backgroundColorChange {
+    0% { background-color: rgba(74, 144, 226, 0.7); } /* Initial color */
+    25% { background-color: rgba(227, 87, 134, 0.7); } /* Pink */
+    50% { background-color: rgba(255, 193, 7, 0.7); } /* Yellow */
+    75% { background-color: rgba(76, 175, 80, 0.7); } /* Green */
+    100% { background-color: rgba(74, 144, 226, 0.7); } /* Back to initial color */
+}
+
+/* Level Selection Section */
+#level-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+   
+}
