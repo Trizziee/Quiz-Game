@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythologies</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="questionMarksContainer"></div>
+   
+    <main>
+        <div class="brain-teaser-main">
+        <section id="level-selection">
+            <h2>Choose a Level</h2>
+            <div class="brain-teaser-buttons-container">
+            <button onclick="selectLevel('easy')">Easy</button>
+            <button onclick="selectLevel('medium')">Medium</button>
+            <button onclick="selectLevel('hard')">Hard</button>
+            <button onclick="selectLevel('expert')">Expert</button>
+            </div>
+        </section>
+        <div class="test-container"></div>
+
+        <!-- Question Display -->
+        <section id="question-section" style="display: none;">
+            <h2 id="question-text">Question goes here</h2>
+            <div id="options">
+                <!-- Options will be dynamically inserted here -->
+            </div>
+            <p id="progress">Progress: 0/5</p>
+            <p id="timer">Time Left: 30 seconds</p>
+            <p id="score-display">Score: 0</p>
+            <button id="submit-button" onclick="checkAnswer()">Submit Answer</button>
+            <button id="next-button" style="display: none;" onclick="nextQuestion()">Next Question</button>
+        </section>
+
+        <section id="final-score" style="display: none;"></section>
+
+        <!-- Feedback Display -->
+        <p id="feedback"></p>
+    </section>
+    </main>
+    <footer class="footer">
+        <a href="index.html">&larr; Back to Categories</a>
+        <p>All Rights Reserved<p> 
+        <br>
+        <p>&copy;Trivia Trek</p>
+    </footer>
+</body>
+<script src="myths.js"></script>
+</html>
